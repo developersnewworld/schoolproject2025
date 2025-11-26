@@ -27,4 +27,13 @@ public class StudentService {
     public Student getStudentById(Long studentId) {
         return studentRepository.findById(studentId);
     }
+
+    // Compatibility methods for Controller which expects findAll/findById
+    public List<Student> findAll() {
+        return getAllStudents();
+    }
+
+    public Student findById(Long id) {
+        return getStudentById(id);
+    }
 }

@@ -37,8 +37,9 @@
             <version>2.3.3</version>
             <scope>provided</scope>
         </dependency>
+        <!-- JSTL dependency: groupId changed to javax.servlet so artifact resolves from Maven Central -->
         <dependency>
-            <groupId>javax.servlet.jsp.jstl</groupId>
+            <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>

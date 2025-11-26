@@ -1,3 +1,5 @@
+package com.school.model;
+
 public class Student {
     private Long id;
     private String name;
